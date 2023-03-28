@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rlyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_color" />
+
+        <RadioGroup
+            android:id="@+id/rg_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/selector_home_bottom_text"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_newest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="更新"
+                android:textColor="@drawable/selector_home_bottom_text"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_live"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="直播"
+                android:textColor="@drawable/selector_home_bottom_text"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_magnet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="资源"
+                android:textColor="@drawable/selector_home_bottom_text"
+                android:textSize="10dp" />
+
+            <RadioButton
+                android:id="@+id/rb_me"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/selector_home_bottom_text"
+                android:textSize="10dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlyt_bottom" />
+</RelativeLayout>

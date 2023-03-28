@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">movie</string>
+
+    <string name="title_dialog">设置权限</string>
+    <string name="setting">去设置</string>
+    <string name="cancel">取消</string>
+    <string name="message_permission_always_failed">请在设置中给我们以下权限:\n\n%1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
